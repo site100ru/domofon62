@@ -115,7 +115,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 
 <header>
     <nav class="navbar navbar-expand-md navbar-dark for-mobile">
-		<div class="container">
+		<div class="container px-0 d-flex flex-column flex-lg-row align-items-start" style="background-color: #002977;">
 			
 			<!--label class="menu-button" aria-hidden="true">
 				<span class="bread bread-top">
@@ -126,23 +126,25 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				</span>
 			</label-->
 		  
-			<a href="#" data-bs-toggle="modal" data-bs-target="#dostupModal" class="top-btn">
-				<span class="action-btn">Получить доступ</span>
-			</a>
-			
-			<label class="menu-button" aria-hidden="true" data-bs-toggle="collapse" data-bs-target="#new-main-menu">
-				<span class="bread bread-top">
-					<span class="ham ham-top"></span>
-				</span>
-				<span class="bread bread-bottom">
-					<span class="ham ham-bottom"></span>
-				</span>
-			</label>
-
-			<div class="d-block d-md-none soc-align" style="margin-right: 225px;">
-				<a href="tg://resolve?domain=RDK62bot"> 
-					<img src="https://domofon62.ru/wp-content/themes/domoftwo/img/ico/telegram-ico.svg" alt="" class="">
+			<div class="d-flex align-items-center" style="column-gap: 40px;">
+				<a href="#" data-bs-toggle="modal" data-bs-target="#dostupModal" aria-expanded="false" class="top-btn">
+					<span class="action-btn">Получить доступ</span>
 				</a>
+				
+				<label class="menu-button" aria-hidden="true" data-bs-toggle="collapse" data-bs-target="#new-main-menu">
+					<span class="bread bread-top">
+						<span class="ham ham-top"></span>
+					</span>
+					<span class="bread bread-bottom">
+						<span class="ham ham-bottom"></span>
+					</span>
+				</label>
+
+				<div class="d-block d-lg-none soc-align" style="margin-right: 225px;">
+					<a href="tg://resolve?domain=RDK62bot"> 
+						<img src="https://domofon62.ru/wp-content/themes/domoftwo/img/ico/telegram-ico.svg" alt="" class="">
+					</a>
+				</div>
 			</div>
 			
 			<!--button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#new-main-menu" aria-controls="new-main-menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -150,7 +152,8 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 			</button-->
 		  
 			<div class="collapse navbar-collapse" id="new-main-menu">
-				<ul id="menu-new-main-menu" class="menu navbar-nav me-auto mb-2 mb-lg-0"><li id="menu-item-18037" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5 current_page_item menu-item-18037 nav-item"><a class="nav-link  active" href="https://domofon62.ru/" aria-current="page">Главная</a></li>
+				<nav class="navbar-nav">
+					<ul id="menu-new-main-menu" class="menu navbar-nav me-auto mb-2 mb-lg-0 justify-content-between" style="gap: clamp(2px, 1.5vw, 23px);"><li id="menu-item-18037" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5 current_page_item menu-item-18037 nav-item"><a class="nav-link  active" href="https://domofon62.ru/" aria-current="page">Главная</a></li>
 <li id="menu-item-18040" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-18040 nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" href="https://domofon62.ru/catalog/">Каталог</a>
 <ul class="dropdown-menu">
 	<li id="menu-item-18038" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-18038 nav-item dropend"><a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" href="https://domofon62.ru/product-category/avtomatika-dlya-vorot-shlag/">Автоматика для ворот, шлагбаумы, ворота</a>
@@ -235,12 +238,14 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 	<li id="menu-item-18048" class="menu-item menu-item-type-post_type_archive menu-item-object-objekty menu-item-18048 nav-item"><a class="nav-link " href="https://domofon62.ru/objekty/">Наши объекты</a></li>
 	<li id="menu-item-18046" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18046 nav-item"><a class="nav-link " href="https://domofon62.ru/o-kompanii/">О компании</a></li>
 	<li id="menu-item-18041" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18041 nav-item"><a class="nav-link " href="https://domofon62.ru/kontakty/">Контакты</a></li>
-	<li>
+	<li class="d-none d-lg-inline-block">
 		<a href="#" data-bs-toggle="modal" data-bs-target="#dostupModal">
 			<div class="action-btn d-none d-lg-inline-block">Получить доступ</div>
 		</a>
 	</li>
-</ul>			</div>
+					</ul>
+				</nav>			
+			</div>
 		</div>
     </nav>
 </header>
@@ -277,11 +282,11 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				</div>
 				<div class="d-none d-md-flex align-items-center flex-xl-row flex-column" style="column-gap: 25px;">
 					<div class="d-none d-md-block text-md-end">
-						<p class="chasy">Служба поддержки</p>
+						<p class="chasy pt-1">Служба поддержки</p>
 						<p class="tel-header"><a href="tel:84912255046">8 (4912) 25-50-46</a></p>
 					</div>
 					<div class="d-none d-md-block text-md-end">
-						<p class="chasy">Ежедневно: c 9-00 до 20-00</p>
+						<p class="chasy pt-1">Ежедневно: c 9-00 до 20-00</p>
 						<p class="tel-header"><a href="tel:84912202526">8 (4912) 20-25-26</a></p>
 					</div>
 				</div>

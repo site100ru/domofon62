@@ -818,10 +818,6 @@ nav li > ul {
 		top: 9px;
 		right: 15px;
 	}
-	a.top-btn .action-btn {
-		height: 40px;
-		padding: 13px 15px;
-	}
 	/*.container-fluid-md.tadaa .top-btn {
 		display: none;
 	}*/
@@ -833,8 +829,7 @@ nav li > ul {
 	.top-btn {
 		display: block;
 		position: absolute;
-		top: 10px;
-		bottom: 10px;
+		top: 9px;
 		right: 12px;
 	}
 
@@ -852,7 +847,6 @@ nav li > ul {
 	.menu-button {
 		display: block;
 		margin-right: auto;
-        margin-bottom: 15px;
 	}
 	.menu-main-menu-container {
 		display: none;
@@ -882,6 +876,10 @@ nav li > ul {
 	
 	.section-home-padding {
 		padding: 30px 30px;
+	}
+
+	.navbar-expand-md .navbar-nav {
+		flex-direction: column;
 	}
 }
 
@@ -929,9 +927,10 @@ nav li > ul {
 		line-height: normal;
 	}
 
-	.for-mobile .soc-align {
-		margin-bottom: 13px;
+	#new-main-menu li a {
+		line-height: 2.3;
 	}
+
 	/*** END MENU ***/
 	
 	
