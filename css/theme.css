@@ -96,10 +96,10 @@ h2.wp-block-heading {
 	color: #FFFFFF;
 }
 
-
 .action-btn {
 	/* display: inline-block; */
 	max-width: 219px;
+	height: 50px;
 	font-family: var(--font-gilroy-regular);
 	text-decoration: none;
 	font-weight: 700;
@@ -107,11 +107,11 @@ h2.wp-block-heading {
 	color: #ffffff;
 	background-color: var(--secondary-pale-blue);
 	text-transform: uppercase;
-	padding: 15px;
+	padding: 20px;
 	outline: none;
 	text-align: center;
 	letter-spacing: 0.15em;
-	border-radius: 5px;
+	line-height: 1;
 	border: none;
 	border-color: var(--secondary-pale-blue);
 }
@@ -373,6 +373,11 @@ nav li > ul {
 
 #new-main-menu li a {
 	line-height: 2.3;
+    padding: 8px 20px 7px;
+}
+
+#new-main-menu li a:has(.action-btn) {
+	padding-inline: 0;
 }
 
 #new-main-menu .dropdown-menu {
@@ -815,17 +820,30 @@ nav li > ul {
 	}
 	a.top-btn .action-btn {
 		height: 40px;
-		padding: 11px 15px;
+		padding: 13px 15px;
 	}
 	/*.container-fluid-md.tadaa .top-btn {
 		display: none;
 	}*/
+
+	.for-mobile {
+		height: 60px;
+	}
 	
 	.top-btn {
 		display: block;
 		position: absolute;
-		top: 16px;
-		right: 15px;
+		top: 10px;
+		bottom: 10px;
+		right: 12px;
+	}
+
+	.for-mobile .action-btn {
+		display: inline-block;
+		border-radius: 5px;
+		padding: 14px 8px;
+		width: 198px;
+		height: 40px;
 	}
 }
 
@@ -833,6 +851,8 @@ nav li > ul {
 @media (max-width: 991.98px) {
 	.menu-button {
 		display: block;
+		margin-right: auto;
+        margin-bottom: 15px;
 	}
 	.menu-main-menu-container {
 		display: none;
@@ -907,6 +927,10 @@ nav li > ul {
 	
 	#new-main-menu li a {
 		line-height: normal;
+	}
+
+	.for-mobile .soc-align {
+		margin-bottom: 13px;
 	}
 	/*** END MENU ***/
 	
