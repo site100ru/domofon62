@@ -840,6 +840,10 @@ nav li > ul {
 		width: 198px;
 		height: 40px;
 	}
+
+	.mobile-height {
+		height: 60px;
+	}
 }
 
 
