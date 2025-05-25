@@ -111,6 +111,7 @@ h2.wp-block-heading {
 	outline: none;
 	text-align: center;
 	letter-spacing: 0.15em;
+	border-radius: 5px;
 	line-height: 1;
 	border: none;
 	border-color: var(--secondary-pale-blue);
@@ -374,6 +375,10 @@ nav li > ul {
 #new-main-menu li a {
 	line-height: 2.3;
     padding: 8px 20px 7px;
+}
+
+#new-main-menu .dropdown-menu li a {
+	padding: 4px 16px;
 }
 
 #new-main-menu li a:has(.action-btn) {
@@ -736,6 +741,16 @@ nav li > ul {
     background: url(https://domofon62.ru/wp-content/themes/domoftwo/img/ico/radio-on.svg) 0 0 no-repeat;
 }
 
+input.wpcf7-form-control.wpcf7-text, input.wpcf7-form-control.wpcf7-tel {
+    width: 90%;
+    height: 50px;
+    background: var(--light-grey);
+    border: 1px solid #D6D6D6;
+    margin: 5px auto;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
 #webSistemPriceTab .form_radio label,
 #autonomSistemPriceTab .form_radio label {
     display: inline-block;
@@ -848,6 +863,10 @@ nav li > ul {
 
 
 @media (max-width: 991.98px) {
+	#new-main-menu li a {
+		padding: 8px 0;
+	}
+
 	.menu-button {
 		display: block;
 		margin-right: auto;
@@ -926,15 +945,27 @@ nav li > ul {
 		border-radius: 3px;
 		border: 1px solid #216DFF;
 	}
-	
+
+	#new-main-menu .dropdown-menu {
+        background-color: transparent;
+        border-radius: 3px;
+        border: 1px solid #216DFF;
+    }
+
+	/* #new-main-menu .dropdown-menu li a {
+		padding: 8px 0;
+	} */
+
 	#new-main-menu li a {
 		line-height: normal;
 	}
 
-	#new-main-menu li a {
-		line-height: 2.3;
-	}
-
+	#new-main-menu .dropdown-menu li a, .dropdown-toggle {
+        white-space: normal;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 60px;
+    }
 	/*** END MENU ***/
 	
 	
