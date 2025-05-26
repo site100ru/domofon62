@@ -825,9 +825,7 @@ input.wpcf7-form-control.wpcf7-text, input.wpcf7-form-control.wpcf7-tel {
 		background-position: right bottom;
 		background-size: 125% auto;
 	}
-}
 
-@media (max-width: 1110px) {
 	#menu-new-main-menu {
 		column-gap: 0;
 	}
