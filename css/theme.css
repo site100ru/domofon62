@@ -379,6 +379,7 @@ nav li > ul {
 #new-main-menu li a {
 	line-height: 2.3;
     padding: 8px 20px 7px;
+	height: 100%;
 }
 
 #new-main-menu .dropdown-menu li a {
