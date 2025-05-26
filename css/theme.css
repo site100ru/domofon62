@@ -99,7 +99,7 @@ h2.wp-block-heading {
 .action-btn {
 	/* display: inline-block; */
 	max-width: 219px;
-	height: 50px;
+	height: 100%;
 	font-family: var(--font-gilroy-regular);
 	text-decoration: none;
 	font-weight: 700;
@@ -370,6 +370,10 @@ nav li > ul {
 
 .nav-item.dropend .dropdown-menu {
     margin-left: 0;
+}
+
+#menu-new-main-menu {
+	column-gap: clamp(2px, 1.5vw, 23px);
 }
 
 #new-main-menu li a {
@@ -820,6 +824,16 @@ input.wpcf7-form-control.wpcf7-text, input.wpcf7-form-control.wpcf7-tel {
 		background-repeat: no-repeat;
 		background-position: right bottom;
 		background-size: 125% auto;
+	}
+}
+
+@media (max-width: 1110px) {
+	#menu-new-main-menu {
+		column-gap: 0;
+	}
+
+	#new-main-menu li a {
+		padding: 8px 18px 7px;
 	}
 }
 
