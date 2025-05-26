@@ -373,7 +373,7 @@ nav li > ul {
 }
 
 #menu-new-main-menu {
-	column-gap: clamp(2px, 1.5vw, 23px);
+	column-gap: clamp(2px, 1vw, 23px);
 }
 
 #new-main-menu li a {
