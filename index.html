@@ -1425,7 +1425,7 @@
 									id="menu-item-18041"
 									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18041 nav-item"
 								>
-									<a class="nav-link" href="https://domofon62.ru/kontakty/"
+									<a class="nav-link" href="/contact.html"
 										>Контакты</a
 									>
 								</li>
@@ -1604,13 +1604,19 @@
 					</h2>
 					<div class="modal-body">
 						<div class="text-center">
-							<div class="wpcf7 no-js" id="wpcf7-f373-o1" lang="ru-RU" dir="ltr">
+							<div
+								class="wpcf7 js"
+								id="wpcf7-f373-o1"
+								lang="ru-RU"
+								dir="ltr"
+								data-wpcf7-id="373"
+							>
 								<div class="screen-reader-response">
 									<p role="status" aria-live="polite" aria-atomic="true"></p>
 									<ul></ul>
 								</div>
 								<form
-									action="/#wpcf7-f373-o1"
+									action="/kontakty/#wpcf7-f373-o1"
 									method="post"
 									class="wpcf7-form init"
 									aria-label="Контактная форма"
@@ -1620,7 +1626,7 @@
 								>
 									<div style="display: none">
 										<input type="hidden" name="_wpcf7" value="373" />
-										<input type="hidden" name="_wpcf7_version" value="5.7.4" />
+										<input type="hidden" name="_wpcf7_version" value="6.0.3" />
 										<input type="hidden" name="_wpcf7_locale" value="ru_RU" />
 										<input
 											type="hidden"
@@ -1639,8 +1645,13 @@
 										/>
 										<input
 											type="hidden"
+											name="_wpcf7dtx_version"
+											value="5.0.2"
+										/>
+										<input
+											type="hidden"
 											name="_wpcf7_recaptcha_response"
-											value=""
+											value="03AFcWeA44l-eG536Zz6yW1O0EOMPcGpdVnGs2ZuBs28HAe_-QwCyi3crRZsn9PB79nLltzLooyfA5BurlWR2M12fUfPAJiFsB-JDh42hWi1rAQUYa7Uer-8d3xqEPNbwcooUMSEZa7JdFWz59VlccTrHPqIaa53XfzwpsjapTdguWcZEwJO-u7famUaxg-7GoDyw_gBsmBYeOJ6kVwv6iViCnYNxpuuXBH5bRLDpKaKp_WIQeqG8YsHtD4quPangWdf76sP3v_cmWoSTqZOcd7MlPbHlY622Qd0QtyrzfjE_zyRsKSJ_4Uyu8cIjFDNtA6iLXOyzb3lU5Ur4fep7IbImg73qrYz0DfvDVQNyoxieowQalbPxo0ykLAwladkU8AKPCGsM68TBz4HyUYHmEY2nbEyoSNd4nxKCgtZ4CJfqd5yRnZ2Clx5mQm28EleTjUf72a68qxpdC4Pm9bKyR4yGBOkmh1N8rRabuBIEt6VOGyVPsnBE5gSVW3675JdmqteoTzq23f3gBfq6ex3WW0zcOuQJCGdZsSKgURYp9AznwdZuJ67l5EuKVQfS626TKZLdZAFKtiacoOUSZ_Q3WiE9PP7IPq3WVxdMtRmQn1Qidp_MXzjXF3KFQ4kzDf4kQIvurcwHgRxI4XhvGeEuf5CMBGhTwduXmdE2tWN8ZTJROsPi79mottXct7fC0DLDoqSg8IJFIHwirrZgxd28cx-A3iCn38qa81oBxAh94u9Lql15NRqTVKi6glVQ2trK0gSJNMUcpT_ADuuyyZqvWwfWhyPEoi1OQEVTL5JRy4zOD_gskFeRX-hJwjJTxrQZ9B7qF9JExN3-VN8LgoRaBCeAsQiLcqxJ3_zYP4skL6_ezHoCh__XkbdiHno4bCifHDP1D1t08pFekpHa1YYspB_mbGpEeeKe-xQ"
 										/>
 									</div>
 									<div class="no-p">
@@ -1677,21 +1688,48 @@
 														></span
 													></span
 												></span
-											><br />
-											<span
-												class="wpcf7-form-control-wrap"
-												data-name="text-690"
-												><input
-													size="40"
-													class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-													aria-required="true"
-													aria-invalid="false"
-													placeholder="Лицевой счет"
-													value=""
-													type="text"
-													name="text-690"
-											/></span>
+											>
 										</p>
+									</div>
+									<div style="width: 95%; margin: auto">
+										<div class="no-p" style="width: 50%; float: left">
+											<p>
+												<span
+													class="wpcf7-form-control-wrap"
+													data-name="text-690"
+													><input
+														size="40"
+														maxlength="400"
+														class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required telMask"
+														aria-required="true"
+														aria-invalid="false"
+														placeholder="Телефон"
+														value=""
+														type="text"
+														name="text-690"
+														inputmode="text"
+												/></span>
+											</p>
+										</div>
+										<div class="no-p" style="width: 50%; float: right">
+											<p>
+												<span
+													class="wpcf7-form-control-wrap"
+													data-name="email-988"
+													><input
+														size="40"
+														maxlength="400"
+														class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
+														aria-required="true"
+														aria-invalid="false"
+														placeholder="E-mail"
+														value=""
+														type="email"
+														name="email-988"
+												/></span>
+											</p>
+										</div>
+										<div class="clear: both;"></div>
 									</div>
 									<div style="width: 95%; margin: auto">
 										<div class="no-p" style="width: 50%; float: left">
@@ -1701,6 +1739,7 @@
 													data-name="text-700"
 													><input
 														size="40"
+														maxlength="400"
 														class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
 														aria-required="true"
 														aria-invalid="false"
@@ -1718,6 +1757,7 @@
 													data-name="text-701"
 													><input
 														size="40"
+														maxlength="400"
 														class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
 														aria-required="true"
 														aria-invalid="false"
@@ -1738,6 +1778,7 @@
 													data-name="text-702"
 													><input
 														size="40"
+														maxlength="400"
 														class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
 														aria-required="true"
 														aria-invalid="false"
@@ -1755,6 +1796,7 @@
 													data-name="text-703"
 													><input
 														size="40"
+														maxlength="400"
 														class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required no-p"
 														aria-required="true"
 														aria-invalid="false"
@@ -1771,6 +1813,7 @@
 										<span class="wpcf7-form-control-wrap" data-name="text-710"
 											><input
 												size="40"
+												maxlength="400"
 												class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
 												aria-required="true"
 												aria-invalid="false"
@@ -1802,33 +1845,27 @@
 											.jpg, .jpeg, .png или .pdf, размером не более 5 МБ)*
 										</p>
 									</div>
+									<!-- <span class="wpcf7-form-control-wrap" data-name="text-707"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Ваше имя" value="" type="text" name="text-707" /></span> -->
 									<p>
-										<span class="wpcf7-form-control-wrap" data-name="email-988"
-											><input
-												size="40"
-												class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-												aria-required="true"
+										<span
+											class="wpcf7-form-control-wrap"
+											data-name="textarea-737"
+										>
+											<textarea
+												cols="40"
+												rows="10"
+												maxlength="2000"
+												class="wpcf7-form-control wpcf7-textarea"
 												aria-invalid="false"
-												placeholder="E-mail"
-												value=""
-												type="email"
-												name="email-988" /></span
-										><br />
-										<span class="wpcf7-form-control-wrap" data-name="text-707"
-											><input
-												size="40"
-												class="wpcf7-form-control wpcf7-text"
-												aria-invalid="false"
-												placeholder="Ваше имя"
-												value=""
-												type="text"
-												name="text-707" /></span
+												placeholder="Комментарий"
+												name="textarea-737"
+											></textarea></span
 										><br />
 										<input
-											class="wpcf7-form-control has-spinner wpcf7-submit"
+											class="wpcf7-form-control wpcf7-submit has-spinner"
 											type="submit"
 											value="Получить доступ"
-										/>
+										/><span class="wpcf7-spinner"></span>
 									</p>
 									<div class="wpcf7-response-output" aria-hidden="true"></div>
 								</form>
@@ -2730,8 +2767,8 @@
 
 		<footer id="footer">
 			<div class="container">
-				<div class="row footer align-items-center">
-					<div class="col col-lg-3 d-flex flex-column">
+				<div class="row footer align-items-start">
+					<div class="col col-md-6 col-lg-3 d-flex flex-column">
 						<a href="https://domofon62.ru/">
 							<img
 								src="https://domofon62.ru/wp-content/uploads/2023/02/logo-footer.svg"
@@ -2751,7 +2788,7 @@
 						</div>
 					</div>
 
-					<div class="col-12 col-md-4 col-lg-2">
+					<div class="col-12 col-md-6 col-lg-3">
 						<div class="menu-left-footer-menu-container">
 							<ul id="menu-left-footer-menu" class="menu">
 								<li
@@ -2766,11 +2803,12 @@
 								>
 									<a href="https://domofon62.ru/catalog/">Каталог</a>
 								</li>
+
 								<li
 									id="menu-item-131"
 									class="menu-item menu-item-type-post_type_archive menu-item-object-uslugi menu-item-131"
 								>
-									<a href="https://domofon62.ru/uslugi/">Наши услуги</a>
+									<a href="https://domofon62.ru/uslugi/">Услуги</a>
 								</li>
 								<li
 									id="menu-item-228"
@@ -2788,50 +2826,117 @@
 									id="menu-item-70"
 									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"
 								>
-									<a href="https://domofon62.ru/kontakty/">Контакты</a>
+									<a href="/contact.html">Контакты</a>
+								</li>
+								<li
+									id="menu-item-700"
+									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-700"
+								>
+									<a href="/informacziya-dlya-klientov/"
+										>Информация для клиентов</a
+									>
 								</li>
 							</ul>
 						</div>
 					</div>
 
-					<div class="col">
+					<div class="col col-md-6 col-lg-3">
 						<div class="menu-right-footer-menu-container">
-							<ul id="menu-right-footer-menu" class="menu">
+							<ul id="menu-right-footer-menu" class="menu mb-3">
 								<li
 									id="menu-item-69"
 									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-69"
 								>
+									<a href="#">Домофоны</a>
+								</li>
+
+								<li
+									id="menu-item-690"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-690"
+								>
+									<a href="#">Системы контроля доступа</a>
+								</li>
+
+								<li
+									id="menu-item-691"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-691"
+								>
+									<a href="#">Видеонаблюдение</a>
+								</li>
+
+								<li
+									id="menu-item-691"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-691"
+								>
 									<a href="#">Умный дом</a>
+								</li>
+
+								<li
+									id="menu-item-692"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-692"
+								>
+									<a href="#">Публичная оферта</a>
+								</li>
+
+								<li
+									id="menu-item-693"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-693"
+								>
+									<a href="/privacy-policy/">Политика конфиденциальности</a>
+								</li>
+
+								<li
+									id="menu-item-694"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-694"
+								>
+									<a href="#">Согласие на обработку персональных данных</a>
 								</li>
 							</ul>
 						</div>
-						<p class="policy">
-							<a href="/informacziya-dlya-klientov/">Информация для клиентов</a>
-						</p>
-						<p class="policy">
-							<a
-								href="https://domofon62.ru/wp-content/themes/domoftwo/oferta_6234057300.pdf"
-								target="_blank"
-								>Публичная оферта</a
-							>
-						</p>
-						<p class="policy">
-							<a href="/privacy-policy/">Политика конфиденциальности</a>
-						</p>
 					</div>
 
-					<div class="col-12 col-md-6 col-lg-3">
-						<div class="d-flex flex-column">
-							<div class="me-lg-3 mt-3 mt-md-auto">
-								<p class="chasy-footer">Ежедневно: c 9-00 до 17-00</p>
-								<p class="tel-footer">
-									<a href="tel:+74912202526">+7 (4912) 20-25-26</a>
-								</p>
-							</div>
-							<a href="#" data-bs-toggle="modal" data-bs-target="#dostupModal"
-								><div class="action-btn">Получить доступ</div></a
+					<div class="col-12 col-md-6 col-lg-3 text-start text-lg-end footer-end">
+						<div class="">
+							<p class="chasy pt-2 fw-bold mb-0 lh-1">Служба поддержки:</p>
+							<p class="chasy pt-1 m-0">Пн-Пт: c 8-30 до 17-00</p>
+							<p class="tel-header pt-1 mb-0">
+								<a href="tel:84912255046">8 (4912) 25-50-46</a>
+							</p>
+							<a
+								href="tg://resolve?domain=RDK62bot"
+								class="d-flex justify-content-start justify-content-lg-end align-items-center gap-2 lh-1 mb-3 social-links"
 							>
+								<img
+									src="https://domofon62.ru/wp-content/themes/domoftwo/img/ico/telegram-ico.svg"
+									alt=""
+									class=""
+								/>
+								<p class="chasy fw-bold p-0 m-0">@RDK62</p>
+							</a>
 						</div>
+
+						<div class="">
+							<p class="chasy pt-2 fw-bold mb-0 lh-1">Служба поддержки:</p>
+							<p class="chasy pt-1 m-0">Пн-Пт: c 8-30 до 17-00</p>
+							<p class="tel-header pt-1 mb-0">
+								<a href="tel:84912255046">8 (4912) 25-50-46</a>
+							</p>
+							<a
+								href="tg://resolve?domain=RDK62bot"
+								class="d-flex justify-content-start justify-content-lg-end align-items-center gap-2 lh-1 mb-3 social-links"
+							>
+								<img
+									src="https://domofon62.ru/wp-content/themes/domoftwo/img/ico/telegram-ico.svg"
+									alt=""
+									class=""
+								/>
+								<p class="chasy fw-bold p-0 m-0">@RDK62bot</p>
+							</a>
+						</div>
+
+						<a href="#" data-bs-toggle="modal" data-bs-target="#dostupModal"
+							><div class="action-btn">Получить доступ</div></a
+						>
 					</div>
 				</div>
 
