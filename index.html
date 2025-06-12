@@ -1425,9 +1425,7 @@
 									id="menu-item-18041"
 									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18041 nav-item"
 								>
-									<a class="nav-link" href="/contact.html"
-										>Контакты</a
-									>
+									<a class="nav-link" href="contact.html">Контакты</a>
 								</li>
 
 								<li
@@ -1853,14 +1851,39 @@
 										>
 											<textarea
 												cols="40"
-												rows="10"
+												rows="5"
 												maxlength="2000"
 												class="wpcf7-form-control wpcf7-textarea"
 												aria-invalid="false"
 												placeholder="Комментарий"
 												name="textarea-737"
-											></textarea></span
+											></textarea>
+
+											<p class="conf-modal" id="conf-modal">
+												<label class="checkbox">
+													<input
+														type="checkbox"
+														required
+														id="gridCheck-two"
+														name="agreement"
+														required
+														class="form-check-input"
+														checked
+													/>
+													<span
+														>Даю согласие на обработку персональных
+														данных. Подробнее об обработке персональных
+														данных в
+														<a
+															href="https://domofon62.ru/privacy-policy/"
+															target="_blank"
+															>Политика конфиденциальности.</a
+														>
+													</span>
+												</label>
+											</p> </span
 										><br />
+
 										<input
 											class="wpcf7-form-control wpcf7-submit has-spinner"
 											type="submit"
@@ -1871,12 +1894,6 @@
 								</form>
 							</div>
 						</div>
-						<p class="conf-modal">
-							Отправляя данные с формы вы подтверждаете своё согласие с
-							<a href="/privacy-policy/" target="_blank"
-								>политикой конфиденциальности.</a
-							>
-						</p>
 					</div>
 				</div>
 			</div>
@@ -2826,7 +2843,7 @@
 									id="menu-item-70"
 									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"
 								>
-									<a href="/contact.html">Контакты</a>
+									<a href="contact.html">Контакты</a>
 								</li>
 								<li
 									id="menu-item-700"
@@ -2882,7 +2899,9 @@
 									id="menu-item-693"
 									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-693"
 								>
-									<a href="/privacy-policy/">Политика конфиденциальности</a>
+									<a href="https://domofon62.ru/privacy-policy/"
+										>Политика конфиденциальности</a
+									>
 								</li>
 
 								<li
@@ -3057,9 +3076,9 @@
 														name="tel-208"
 												/></span>
 											</p>
-											<p>
+											<p style="width: 90%; margin: 0 auto">
 												После заказа товара с Вами свяжется наш менеджер и
-												расскажет как можно оплатить и получить Ваш заказ..
+												расскажет как можно оплатить и получить Ваш заказ.
 											</p>
 											<p>
 												<input
@@ -3075,8 +3094,8 @@
 														size="40"
 														aria-invalid="false"
 														type="hidden"
-														value="Главная" /></span
-												><br />
+														value="Главная"
+												/></span>
 												<input
 													class="wpcf7-form-control wpcf7-hidden"
 													id="CF"
@@ -3092,11 +3111,26 @@
 										</form>
 									</div>
 								</div>
-								<p class="conf-modal">
-									Отправляя данные с формы вы подтверждаете своё согласие с
-									<a href="/privacy-policy/" target="_blank"
-										>политикой конфиденциальности.</a
-									>
+								<p class="conf-modal pb-3" id="conf-modal">
+									<label class="checkbox">
+										<input
+											type="checkbox"
+											required=""
+											id="gridCheck-two"
+											name="agreement"
+											class="form-check-input"
+											checked=""
+										/>
+										<span
+											>Отправляя данные с формы вы подтверждаете своё согласие
+											с
+											<a
+												href="https://domofon62.ru/privacy-policy/"
+												target="_blank"
+												>Политика конфиденциальности.</a
+											>
+										</span>
+									</label>
 								</p>
 							</div>
 						</div>
@@ -3211,7 +3245,7 @@
 														name="tel-208"
 												/></span>
 											</p>
-											<p>
+											<p style="width: 90%; margin: 0 auto">
 												После заказа товара с Вами свяжется наш менеджер и
 												расскажет как можно оплатить и получить Ваш заказ.
 											</p>
@@ -3239,11 +3273,26 @@
 										</form>
 									</div>
 								</div>
-								<p class="conf-modal">
-									Отправляя данные с формы вы подтверждаете своё согласие с
-									<a href="/privacy-policy/" target="_blank"
-										>политикой конфиденциальности.</a
-									>
+								<p class="conf-modal pb-3" id="conf-modal">
+									<label class="checkbox">
+										<input
+											type="checkbox"
+											required=""
+											id="gridCheck-two"
+											name="agreement"
+											class="form-check-input"
+											checked=""
+										/>
+										<span
+											>Отправляя данные с формы вы подтверждаете своё согласие
+											с
+											<a
+												href="https://domofon62.ru/privacy-policy/"
+												target="_blank"
+												>Политика конфиденциальности.</a
+											>
+										</span>
+									</label>
 								</p>
 							</div>
 						</div>
@@ -3252,6 +3301,69 @@
 				<!-- Service Modal -->
 			</div>
 		</footer>
+
+		<!-- Всплывающая форма Политики конфиденциальности -->
+		<div class="popup-form py-3" id="popupForm">
+			<div class="form-content container">
+				<div class="row justify-content-center align-items-center">
+					<div class="col-md-9">
+						<p class="mb-md-0">
+							На на нашем сайте используются cookie-файлы, в том числе сервисов
+							веб-аналитики. Используя сайт, вы соглашаетесь на <a
+								href="https://domofon62.ru/privacy-policy/"
+								target="blank"
+								>обработку персональных данных</a
+							> при помощи cookie-файлов. Подробнее об обработке персональных данных
+							вы можете узнать в <a
+								href="https://domofon62.ru/privacy-policy/"
+								target="blank"
+								>Политике конфиденциальности.</a
+							>
+						</p>
+					</div>
+					<div class="col-md-3 text-md-center">
+						<button id="closeBtn" class="btn action-btn">Понятно</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const popupForm = document.getElementById('popupForm');
+				const closeBtn = document.getElementById('closeBtn');
+
+				// Проверяем нужно ли показывать форму
+				function shouldShowPopup() {
+					const lastClosed = localStorage.getItem('popupLastClosed');
+
+					// Если пользователь никогда не закрывал форму
+					if (!lastClosed) return true;
+
+					// Если прошло более 1 часа (3600000 миллисекунд) с последнего закрытия
+					const now = new Date().getTime();
+					return now - parseInt(lastClosed) > 3600000;
+				}
+
+				// Показываем форму если нужно
+				if (shouldShowPopup()) {
+					setTimeout(() => {
+						popupForm.classList.add('active');
+					}, 3000);
+				}
+
+				// Функция закрытия формы
+				function closePopup() {
+					popupForm.classList.remove('active');
+
+					// Сохраняем время закрытия
+					localStorage.setItem('popupLastClosed', new Date().getTime().toString());
+				}
+
+				// Закрытие по кнопке
+				closeBtn.addEventListener('click', closePopup);
+			});
+		</script>
+		<!-- /Всплывающая форма Политики конфиденциальности -->
 
 		<!-- Messengers button HTML -->
 		<div class="callback-button-wrapper">
